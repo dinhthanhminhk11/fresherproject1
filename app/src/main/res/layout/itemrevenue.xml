@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:elevation="16dp"
+    app:cardCornerRadius="16dp"
+    app:cardMaxElevation="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/revenueName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="titl"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/revenueSourceName"
+            app:layout_constraintEnd_toStartOf="@+id/edit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/revenueSourceName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="titl"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/revenueDate"
+            app:layout_constraintEnd_toStartOf="@+id/edit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/revenueName" />
+
+        <TextView
+            android:id="@+id/revenueDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="titl"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/edit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/revenueSourceName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
